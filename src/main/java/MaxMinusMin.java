@@ -1,5 +1,6 @@
 
 import java.util.List;
+import java.util.*;
 
 public class MaxMinusMin {
     /**
@@ -9,7 +10,10 @@ public class MaxMinusMin {
      * @param nums an List<Integer> containing varying nums.
      * @return the max value of nums minus the min value of nums.
      */
-    public int difference(List<Integer> nums){
-        return 0;
+    public int difference(List<Integer> nums)
+    {
+       Integer min =  Collections.min(nums);
+       Integer max = Collections.max(nums);
+        return max - min;
     }
 }
